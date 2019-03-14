@@ -19,7 +19,7 @@
 
   .archive-title {
     position: relative;
-    margin: 2em auto 1em;
+    margin: 2em auto -1em;
     .archive-year {
       margin-left: 1em;
       &:before {
@@ -39,9 +39,9 @@
 
 
   ul {
-    list-style: none;
+    margin: auto;
     li {
-      margin: 1em auto;
+      margin: auto 2em;
     }
   }
 }

@@ -12,13 +12,11 @@
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="{{ site.url }}/">home</a>
+        <a href="#About">About Me</a>
+        <a href="#Education">Education</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Experience">Experience</a>
       </li>
-      {% for page in site.pages %} {% if page.title %}
-      <li class="nav-item">
-        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
-      </li>
-      {% endif %} {% endfor %}
     </ul>
   </nav>
   {% include social-links.html %}

@@ -3,18 +3,17 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
-url: # the base hostname & protocol for your site
-keywords: ["blog", "jekyll"]
+title: Yiming Shi
+email: syiming@umich.edu
+description: Computer Science Engineering, Class of 2020
+url: https://syiming.github.io
+keywords: ["Yiming", "Shi"]
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,11 +32,11 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  name: "Yiming Shi"
+  avatar: logo.png
+  job: "Computer Science Engineering, Class of 2020"
+  bio: "University of Michigan, Ann Arbor"
+  email: syiming@umich.edu
   disqus-shortname:
   twitter: #username
   facebook: #username
@@ -48,13 +47,13 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  gitlab: #username
+  github: syiming
+  gitlab:
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   skype: #username
   xing: #username
-  instagram: #username
+  instagram: delight11m
   lastfm: #username
   tumblr: #username
   pinterest: #username
