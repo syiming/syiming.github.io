@@ -86,10 +86,10 @@
         @include media-query($small-screen) {
           display: inline-block;
           *display: inline;
-          &:after {
+          & a:after {
             content: '/';
           }
-          &:last-child:after {
+          & a:last-child:after {
             content: '';
           }
         }
