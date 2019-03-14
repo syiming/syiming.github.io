@@ -83,7 +83,15 @@
         margin-top: 1em;
         text-transform: uppercase;
         font-size: 100%;
-        display: block;
+        @include media-query($medium-screen) {
+          display: block;
+        }
+        @include media-query($large-screen) {
+          display: block;
+        }
+        @include media-query($larger-screen) {
+          display: block;
+        }
         color: $secondary;
         &:hover,
         &:focus {
