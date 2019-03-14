@@ -79,20 +79,20 @@
     list-style: none;
     .nav-item {
       zoom: 1;
-      @include media-query($small-screen) {
-        display: inline-block;
-        *display: inline;
-        &:after {
-          content: '/';
-        }
-        &:last-child:after {
-          content: '';
-        }
-      }
       & a {
         margin-top: 1em;
         text-transform: uppercase;
         font-size: 100%;
+        @include media-query($small-screen) {
+          display: inline-block;
+          *display: inline;
+          &:after {
+            content: '/';
+          }
+          &:last-child:after {
+            content: '';
+          }
+        }
         @include media-query($medium-screen) {
           display: block;
         }
