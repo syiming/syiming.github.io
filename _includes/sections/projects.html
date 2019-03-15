@@ -1,22 +1,27 @@
+<br> </br>
 <h1 id="Projects"><span data-i18n="skills.my_skills">Projects</span></h1>
 
-<p> More information comming soon. <a href="http://croma.eecs.umich.edu/croma.html"><img src="/img/lab.png" width="300" height="70" align="right"></img></a></p>
-
-{% for project in site.data.index.projects %}
-    <div class="row">
-            <div class="col">
-                {% if project.name %}
-                <h2 style="margin: 0">{{ project.name }}</h2>
-
-                <p style="margin: 0">{{ project.descr }}</p>
-                {% endif %}
-                {% if project.github %}
-                <a href="{{ project.github }} "><i class="fa fa-fw fa-github"></i>GitHub</a>
-                {% endif %}
-                {% if project.website %}
-                <a href="{{ project.website }} "><i class="fa fa-fw fa-home"></i>Homepage</a>
-                {% endif %}
-
-            </div>
+<div class="tag-list">
+  <div class="tag-group">
+    <h5 class="tag-group-title">CROMA</h5>
+    <div class="intro">
+    <article class="tag-item">
+            <span>More information comming soon. </span>
+    </article>
     </div>
-{% endfor %}
+    <div class="photo"><a href="http://croma.eecs.umich.edu/croma.html"><img src="/img/lab.png" width="200" height="45" align="right"></img></a></div>
+  </div>
+</div>
+<br> </br>
+<div class="tag-list">
+  <div class="tag-group">
+    <h5 class="tag-group-title">Parking Lot Simulation Using OpenGL</h5>
+    <div class="intro">
+    <i>Nov 2016 - Dec 2016</i>
+    <article class="tag-item">
+            <span>Learn and apply singleton design pattern. Design a program to manage a car park and write a simulation using C++ where random vehicles enter and exit the parking lot over a given period of time. Use OpenGL to design a parking lot with different kinds of vehicles and drive vehicles into free slots. </span>
+    </article>
+    </div>
+    <div class="photo"><img src="/img/parkinglot2.gif" width="150" height="145"></img></div>
+  </div>
+</div>
