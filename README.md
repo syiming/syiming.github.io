@@ -1,4 +1,5 @@
 # Hi I am Yiming Shi. 
+[![HitCount](http://hits.dwyl.io/syiming/syiming.github.io.svg)](http://hits.dwyl.io/syiming/syiming.github.io)
 
 Welcome to my GitHub site :smile: !
 
