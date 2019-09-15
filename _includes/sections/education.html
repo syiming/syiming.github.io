@@ -6,12 +6,12 @@
   <div class="timeline" id="timeline">
      {% for career in site.data.index.education %}
       <div class="archive-title">
-        <h6 class="archive-year bio"><a href="{{ career.link }}">{{ career.name }}</a><i><span style="float:right;">{{ career.date }}</span></i></h6>
+        <h5 class="archive-year bio"><a href="{{ career.link }}">{{ career.name }}</a><i><span style="float:right;">{{ career.date }}</span></i></h5>
       </div>
-
       <ul>
-        <i>{{ career.descr }}</i>
-        <p><div>Coursework:</div>{{ career.course }}</p>
+        <p></p>
+        <div><i>{{ career.descr }}</i></div>
+        <div><div>Coursework:</div>{{ career.course }}</div>
       </ul>
       {% endfor %}
   </div>
