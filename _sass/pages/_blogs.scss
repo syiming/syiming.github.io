@@ -26,14 +26,23 @@
   line-height: 125%;
   letter-spacing: 1px;
   text-transform: uppercase;
+  .post-date {
+      color: $secondary;
+  }
 }
 
-.post-info.when-link {
+.post-cat {
+    text-transform: uppercase;
+    color: $warning;
+}
+
+.post-cat.when-link {
   text-decoration: none;
 }
 
-.post-info.when-link:hover {
-  color: #333;
+.post-cat.when-link:hover {
+  font-weight: bold;
+  color: $warning;
 }
 
 .blog-title-link {
@@ -46,4 +55,5 @@
 
 .blog-title-link:hover {
   opacity: 0.61;
+  color: #333;
 }

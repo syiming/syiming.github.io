@@ -3,60 +3,60 @@ layout: default
 ---
 
 {% for post in site.posts %}
-<section class="post">
-  <header class="post-header">
-    <p class="post-meta">
-      <span class="post-date">
-        {{ post.date | date: "%-d %b %Y" | upcase }}
-      </span>
-      {% if post.categories.size > 0 %}
-      •
-      {% for cat in post.categories %}
-        <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
-        {% unless forloop.last %}
-        <span>/</span>
-        {% endunless %}
-      {% endfor %}
-      {% endif %}
-    </p>
-    <h4>
-      <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title | escape }}">{{ post.title }}</a>
-      {% if post.link %}
-      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title | escape }}"><i class="fa fa-external-link"></i></a>
-      {% endif %}
-    </h4>
+<section class="blog-list">
+    <div class="post-wrapper">
+        <a class="blog-title-link w-inline-block" href="{{ site.url }}{{ post.url }}" >
+            <h1 class="blog-title" title="{{ post.title | escape }}">{{ post.title }}</h1>
+        </a>
+        <div class="post-info-wrapper">
+            <div class="post-info">
+                <span class="post-date">
+                {{ post.date | date: "%-d %b %Y" | upcase }}
+                </span>
+            </div>
+            
+            {% if post.categories.size > 0 %}
+            <div class="post-info">|</div>
+            {% for cat in post.categories %}
+            <div class="post-info">
+                <a class="post-cat when-link" href="{{ site.url }}/categories/#{{ cat }}">
+                    {{ cat }}
+                </a>
+            </div>
+            
+              {% unless forloop.last %}
+              /
+              {% endunless %}
+            {% endfor %}
+            {% endif %}
+        </div>
+        {% if post.excerpt %}
+        <div class="post-description">
+          <p>
+            {{ post.excerpt }}
+          </p>
+        </div>
+        {% endif %}
 
-    {% if post.author %}
-      {% assign author = site.data.authors[post.author] %}
-    {% else %}
-      {% assign author = site.owner %}
-    {% endif %}
+        {% if post.image.feature %}
+        <div class="post-image-feature">
+          <img src=
+          {% if post.image.feature contains 'http' %}
+          "{{ post.image.feature }}"
+          {% else %}
+          "{{ site.url }}/img/{{ post.image.feature }}"
+          {% endif %}
+          alt="{{ post.title | escape }} feature image">
 
-    </header>
-
-    {% if post.excerpt %}
-    <div class="post-description">
-      <p>
-        {{ post.excerpt }}
-      </p>
+          {% if post.image.credit %}
+          <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
+          {% endif %}
+        </div><!-- /.image-wrap -->
+        {% endif %}
+        
+        <a class="button-round w-button" href="{{ site.url }}{{ post.url }}">Continue reading →</a>
     </div>
-    {% endif %}
-
-    {% if post.image.feature %}
-    <div class="post-image-feature">
-      <img src=
-      {% if post.image.feature contains 'http' %}
-      "{{ post.image.feature }}"
-      {% else %}
-      "{{ site.url }}/img/{{ post.image.feature }}"
-      {% endif %}
-      alt="{{ post.title | escape }} feature image">
-
-      {% if post.image.credit %}
-      <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
-      {% endif %}
-    </div><!-- /.image-wrap -->
-    {% endif %}
+      
 
 </section>
 {% endfor %}
