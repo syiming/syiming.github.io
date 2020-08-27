@@ -8,10 +8,21 @@
       <div class="archive-title">
         <h5 class="archive-year bio"><a href="{{ career.link }}">{{ career.name }}</a><i><span style="float:right;">{{ career.date }}</span></i></h5>
       </div>
+      <p> </p>
       <ul>
-        <p></p>
         <div><i>{{ career.descr }}</i></div>
-        <div><div>Coursework:</div>{{ career.course }}</div>
+        {% if career.course == null or career.course == "" %}
+        {% else %}
+        <div style="text-indent: -80px; padding-left: 80px;">
+            <i>Coursework:</i> {{ career.course }}
+        </div>
+        {% endif %}
+        {% if career.awards == null or career.awards == "" %}
+        {% else %}
+        <div style="text-indent: -52px; padding-left: 52px;">
+            <i>Awards:</i> {{ career.awards }}
+        </div>
+        {% endif %}
       </ul>
       {% endfor %}
   </div>
