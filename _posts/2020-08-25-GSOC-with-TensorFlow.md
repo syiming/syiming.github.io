@@ -25,6 +25,7 @@ The goal for this project is adding a Resnet FPN feature extractor for faster RC
 * Add multilevel crop and resize function.
 * Modify faster RCNN meta architecture to accept multilevel features.
 * Modify proto files such that feature extractor can accept more args.
+* Training and testing model using TPU(s).
 
 The class diagram for the Resnet FPN feature extractor is shown below.
 
@@ -34,6 +35,7 @@ The class diagram for the Resnet FPN feature extractor is shown below.
 
 Before adding FPN to the Faster RCNN with Resnet50 as backbone, the model reaches mAP 29.3 on COCO dataset. After adding FPN to the Faster RCNN with Resnet50 as backbone, the model reached mAP 31.6.
 
+Tables below shows the Average Precision, Average Recall, and Loss on COCO17 dataset with an input image size of 640x640.
 
 IoU       | area  | maxDets | Average Precision
 ----------|-------|---------|------------------
