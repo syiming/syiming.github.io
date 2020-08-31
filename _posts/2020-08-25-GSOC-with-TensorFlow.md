@@ -2,7 +2,7 @@
 layout: post
 title:  "Google Summer of Code with TensorFlow Model Garden"
 date:   2020-08-24 15:07:19
-excerpt: "A ton of text to test readability."
+excerpt: "This blog post serves as a report of Yiming’s 2020 Google Summer of Code student project."
 categories: [Tech]
 comments: true
 image:
@@ -157,6 +157,9 @@ Implement CVPR 2019 paper - [Panoptic Feature Pyramid Networks](https://arxiv.or
 * Reading code in TensorFlow official computer vision modeling library.
 * Waiting for updates in official library and will start implementing as soon as changes are released. Will continue working on this project in the following months.
 
+## My Experience with GSoC
 
+It is really a great experience this summer with GSoC. Many thanks to my mentor Jaeyoun Kim, Vivek Rathod, Shan Yang, and many others who helped me during this three months. This is my first time participating an open source project. I have learned a lot and received many advice from my mentors on the code structure and give my great guidance on how to contribute high-quality code to the community. They are super helpful and help me moving forward. After these three month, I get to know more about this wonderful community and become more familiar with the most popular AI framework around the world.
+ 
 
 
