@@ -1,6 +1,39 @@
 <br> </br>
 <h1 id="Blogs"><span data-i18n="skills.my_skills">Blogs</span></h1>
+{% for post in site.posts %}
+<section class="blog-list">
+    <div class="post-wrapper">
+        <a class="blog-title-link w-inline-block" href="{{ site.url }}{{ post.url }}" >
+            <h4 title="{{ post.title | escape }}">{{ post.title }}</h4>
+        </a>
+        <div class="post-info-wrapper">
+            <div class="post-info">
+                <span class="post-date">
+                {{ post.date | date: "%-d %b %Y" | upcase }}
+                </span>
+            </div>
 
-<p>Under construction. 👷‍♀️</p>
+            {% if post.categories.size > 0 %}
+            <div class="post-info">|</div>
+            {% for cat in post.categories %}
+            <div class="post-info">
+                <a class="post-cat when-link" href="{{ site.url }}/categories/#{{ cat }}">
+                    {{ cat }}
+                </a>
+            </div>
+
+              {% unless forloop.last %}
+              <div class="post-info">/</div>
+              {% endunless %}
+            {% endfor %}
+            {% endif %}
+        </div>
+
+
+    </div>
+
+
+</section>
+{% endfor %}
 
 <a class="button-round w-button" href="/post_lists">View all blogs →</a>
