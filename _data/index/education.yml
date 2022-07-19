@@ -1,19 +1,21 @@
 - name: University of California, Los Angeles
-  date: Sep 2021 – Dec 2022 (expected)
+  date: Sep 2021 – Mar 2023 (expected)
   descr: Candidate for M.S. in Computer Science
+  course: Parallel and Distributed Systems (A+), Programming Languages (A), Advance Data Mining (A+), Computer Graphics (A+), etc.
+
 
 - name: University of Michigan, Ann Arbor
   link: https://umich.edu
   date: Aug 2018 – May 2020
   descr: B.S. in Computer Science
-  course: Introduction to Operating Systems, Introduction to Machine Learning, Database Management System, Introduction to Computer Organization, Data Structures and Algorithms, Numerical Methods for Engineers and Scientists, etc.
+  course: Introduction to Operating Systems, Introduction to Machine Learning (A), Database Management System (A), Introduction to Computer Organization (A), Data Structures and Algorithms (A), Numerical Methods for Engineers and Scientists (A), etc.
   awards: Dean’s List, University Honors, Summa Cum Laude
 
 - name: Shanghai Jiao Tong University
   link: https://www.sjtu.edu.cn
   date: Sept 2016 - Aug 2020
   descr: B.S. in Electrical and Computer Engineering
-  course: Honors Mathematics, Honors Physics, Introduction to Computer Programming, Programming and Elementary Data Structures, Introduction to Engineering, Introduction to Logic Design, Introduction to Circuits, etc.
+  course: Introduction to Computer Programming (A), Programming and Elementary Data Structures (A), Introduction to Engineering (A), Introduction to Logic Design (A), etc.
   awards: Dean’s List, Merit Undergraduate Scholarship, Outstanding Graduate at Shanghai Jiao Tong University
 
 - name: Technische Universität Berlin
